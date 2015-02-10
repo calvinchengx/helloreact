@@ -1,0 +1,26 @@
+{
+  "name": "helloreact",
+  "version": "1.0.0",
+  "description": "Example set-up for reactjs with gulp for public reference",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "main-bower-files": "^2.5.0",
+    "underscore": "^1.7.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-bower": "0.0.10",
+    "gulp-connect": "^2.2.0",
+    "gulp-filter": "^2.0.1",
+    "gulp-flatten": "0.0.4",
+    "gulp-minify-css": "^0.4.5",
+    "gulp-rename": "^1.2.0",
+    "gulp-uglify": "^1.1.0",
+    "node-fs": "^0.1.7"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Calvin Cheng",
+  "license": "MIT"
+}

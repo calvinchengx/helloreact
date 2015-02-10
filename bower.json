@@ -1,0 +1,23 @@
+{
+  "name": "helloreact",
+  "version": "1.0.0",
+  "authors": [
+    "Calvin Cheng <linchuan.cheng@gmail.com>"
+  ],
+  "description": "Bower dependencies for example reactjs app",
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "react": "~0.12.2"
+  }
+}
