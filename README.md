@@ -10,7 +10,7 @@ It would make sense to do this in an isolated node environment so the automatica
 
 will be cleanly installed.
 
-Open the react + react-router + webpack + gulp + react-hot-loader and enjoy.
+Open app at http://localhost:8080  and enjoy.
 
 ## Notes
 
