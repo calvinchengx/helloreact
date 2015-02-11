@@ -77,5 +77,5 @@ gulp.task('devserver', function() {
   });
 });
 
-gulp.task('default', ['html', 'devserver'], function() {
+gulp.task('default', ['bower', 'html', 'devserver'], function() {
 });
