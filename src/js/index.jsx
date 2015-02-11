@@ -7,8 +7,6 @@ var routes = require('./routes');
 
 var rootInstance = null;
 
-console.log(routes);
-
 Router.run(routes, function (Handler, state) {
     rootInstance = React.render(<Handler />, document.getElementById('container'));
 });
