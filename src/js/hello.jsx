@@ -1,6 +1,11 @@
 /** @jsx React.DOM */
 
-React.render(
-  <h1>Hello, world!</h1>,
-  document.getElementById('container')
-);
+'use strict';
+
+var React = require('react');
+module.exports = React.createClass({
+    displayName: 'HelloReact',
+    render: function(){
+        return <div>Hello React</div>;
+    }
+})
