@@ -9,7 +9,7 @@ module.exports = {
     ]
   },
   output: {
-    path: __dirname + 'generated/js',
+    path: __dirname + '/generated/js',
     filename: 'bundle.js', 
     publicPath: '/js/'
   },
