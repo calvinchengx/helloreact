@@ -38,6 +38,6 @@ module.exports = {
   },
   resolve: {
     extensions: ['', '.js', '.jsx'],
-    modulesDirectories: ['node_modules', 'bower_components', 'web_modules']
+    modulesDirectories: ['bower_components', 'node_modules', 'web_modules']
   }
 };
