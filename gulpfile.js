@@ -18,7 +18,7 @@ var mainBowerFiles = require('main-bower-files');
 // source code: src/{css,img,js}
 // generated files for development: generated/{css,img,js} 
 // build for distribution: dist 
-var projDirs = ['src/css', 'src/js', 'src/img', 'generated/css', 'generated/js', 'generated/img', 'dist'];
+var projDirs = ['src/sass', 'src/css', 'src/js', 'src/img', 'generated/css', 'generated/js', 'generated/img', 'dist'];
 underscore.each(projDirs, function(dir) {
   'use strict';
   nodefs.mkdirSync(dir, '0755', true);

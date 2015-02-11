@@ -1,7 +1,11 @@
 /** @jsx React.DOM */
 'use strict';
 
-require('../css/styles.css');
+// load sass/scss
+require('../sass/styles.scss');
+// load plain css
+// require('../css/styles.css'); 
+
 var React = require('react');
 var Router = require('react-router');
 var routes = require('./routes');
@@ -9,7 +13,7 @@ var routes = require('./routes');
 var rootInstance = null;
 
 Router.run(routes, function (Handler, state) {
-    rootInstance = React.render(<Handler />, document.getElementById('container'));
+    rootInstance = React.render(<Handler />, document.getElementById('container')); // jshint ignore:line
 });
 
 if (module.hot) {
