@@ -1,6 +1,12 @@
+var webpack = require('webpack');
+
 module.exports = {
   entry: {
-    app: ['./src/js/index.jsx']
+    app: [
+      'webpack-dev-server/client?http://localhost:8080',
+      'webpack/hot/dev-server',
+      './src/js/index.jsx'
+    ]
   },
   output: {
     path: __dirname + 'generated/js',
@@ -12,10 +18,14 @@ module.exports = {
       {
         //tell webpack to use jsx-loader for all *.jsx files
         test: /\.jsx$/,
-        loader: 'jsx-loader?insertPragma=React.DOM&harmony'
+        loaders: ['react-hot', 'jsx-loader?insertPragma=React.DOM&harmony']
       }
     ]
   },
+  plugins: [
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.NoErrorsPlugin()  
+  ],
   externals: {
     //don't bundle the 'react' npm package with our bundle.js
     //but get it from a global 'React' variable

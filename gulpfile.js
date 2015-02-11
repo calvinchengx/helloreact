@@ -71,6 +71,9 @@ gulp.task('devserver', function() {
   new webpackDevServer(webpack(myConfig), {
     contentBase: 'generated',
     publicPath: myConfig.output.publicPath,
+    hot: true,
+    quiet: false,
+    noInfo: false,
     stats: { colors: true }
   }).listen(8080, 'localhost', function(err) {
     if (err) { throw new gutil.PluginError('webpack-dev-server', err); }
