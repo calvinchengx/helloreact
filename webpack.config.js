@@ -20,7 +20,10 @@ module.exports = {
         //tell webpack to use jsx-loader for all *.jsx files
         test: /\.jsx$/,
         loaders: ['react-hot', 'jsx-loader?insertPragma=React.DOM&harmony']
-      }
+      },
+      { test: /\.css$/, loader: 'style!css' },
+      { test: /\.scss$/, loader: 'style!css!sass' },
+      { test: /\.jpe?g$|\.gif$|\.png$|\.svg$|\.woff$|\.ttf$/, loader: 'file' }
     ]
   },
   plugins: [

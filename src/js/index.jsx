@@ -1,6 +1,7 @@
 /** @jsx React.DOM */
 'use strict';
 
+require('../css/styles.css');
 var React = require('react');
 var Router = require('react-router');
 var routes = require('./routes');

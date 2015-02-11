@@ -9,6 +9,7 @@
   },
   "devDependencies": {
     "bower-webpack-plugin": "^0.1.6",
+    "css-loader": "^0.9.1",
     "gulp": "^3.8.11",
     "gulp-bower": "0.0.10",
     "gulp-filter": "^2.0.1",
@@ -22,6 +23,8 @@
     "node-fs": "^0.1.7",
     "react": "^0.12.2",
     "react-hot-loader": "^1.1.4",
+    "sass-loader": "^0.4.0-beta.1",
+    "style-loader": "^0.8.3",
     "webpack": "^1.5.3",
     "webpack-dev-server": "^1.7.0"
   },
