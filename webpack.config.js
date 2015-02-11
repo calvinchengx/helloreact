@@ -1,4 +1,5 @@
 var webpack = require('webpack');
+var BowerWebPackPlugin = require('bower-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -24,7 +25,8 @@ module.exports = {
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin()  
+    new webpack.NoErrorsPlugin(),
+    new BowerWebPackPlugin()
   ],
   externals: {
     //don't bundle the 'react' npm package with our bundle.js

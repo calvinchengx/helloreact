@@ -1,9 +1,17 @@
+/** @jsx React.DOM */
 'use strict';
+
 var React = require('react');
-var Hello = require('./Hello');
+var Router = require('react-router');
+var routes = require('./routes');
+
 var rootInstance = null;
 
-rootInstance = React.render(<Hello />, document.getElementById('container'));
+console.log(routes);
+
+Router.run(routes, function (Handler, state) {
+    rootInstance = React.render(<Handler />, document.getElementById('container'));
+});
 
 if (module.hot) {
   require('react-hot-loader/Injection').RootInstanceProvider.injectProvider({

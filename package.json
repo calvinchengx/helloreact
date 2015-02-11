@@ -8,6 +8,7 @@
     "underscore": "^1.7.0"
   },
   "devDependencies": {
+    "bower-webpack-plugin": "^0.1.6",
     "gulp": "^3.8.11",
     "gulp-bower": "0.0.10",
     "gulp-filter": "^2.0.1",
