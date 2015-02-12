@@ -1,20 +1,9 @@
 var gulp = require('gulp');
 var gutil = require('gulp-util');
-var nodefs = require('node-fs');
-var underscore = require('underscore');
 
 var webpack = require('webpack');
 var webpackDevServer = require('webpack-dev-server');
 var webpackConfig = require('./webpack.config.js');
-
-// source code: src/{css,img,js}
-// generated files for development: generated/{css,img,js} 
-// build for distribution: dist 
-var projDirs = ['src/sass', 'src/css', 'src/js', 'src/img', 'generated/css', 'generated/js', 'generated/img', 'dist'];
-underscore.each(projDirs, function(dir) {
-  'use strict';
-  nodefs.mkdirSync(dir, '0755', true);
-});
     
 gulp.task('html', function() {
   'use strict';
