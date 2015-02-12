@@ -13,6 +13,9 @@ fs.copy('src/index.html', 'generated/index.html', function(err) {
   console.log('success!');
 });
 
+// consider using this https://www.npmjs.com/package/html-webpack-plugin
+// can it solve our index.html hot reload problem?
+
 var webpack = require('webpack');
 var bowerDir = __dirname + '/bower_components';
 var BowerWebPackPlugin = require('bower-webpack-plugin'); // automatically graps packages in bower_components, e.g. react-router
