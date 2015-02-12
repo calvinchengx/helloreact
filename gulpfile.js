@@ -7,14 +7,6 @@ var webpack = require('webpack');
 var webpackDevServer = require('webpack-dev-server');
 var webpackConfig = require('./webpack.config.js');
 
-// tooling that we use to manage bower components 
-var flatten = require('gulp-flatten');
-var gulpFilter = require('gulp-filter');
-var uglify = require('gulp-uglify');
-var minifycss = require('gulp-minify-css');
-var rename = require('gulp-rename');
-var mainBowerFiles = require('main-bower-files');
-
 // source code: src/{css,img,js}
 // generated files for development: generated/{css,img,js} 
 // build for distribution: dist 
