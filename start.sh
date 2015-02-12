@@ -2,6 +2,9 @@ npm install -g bower
 npm install -g gulp
 npm install -g react-tools
 npm install -g webpack
+npm install -g webpack-dev-server
 npm install
 bower install
-gulp
+npm run setup
+npm run dev
+
