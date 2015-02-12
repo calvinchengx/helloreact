@@ -1,4 +1,5 @@
 var webpack = require('webpack');
+var bowerDir = __dirname + '/bower_components';
 var BowerWebPackPlugin = require('bower-webpack-plugin');
 
 module.exports = {
@@ -9,21 +10,27 @@ module.exports = {
       './src/js/index.jsx'
     ]
   },
+  resolve: {
+    alias: {
+      'react': bowerDir + '/react/react.min.js'
+    },
+    extensions: ['', '.jsx', '.js', 'min.js']
+  },
   output: {
     path: __dirname + '/generated/js',
     filename: 'bundle.js', 
     publicPath: '/js/'
   },
   module: {
+    noParse: [ // Ask wepack not to parse pre-built files
+      bowerDir + '/react/react.js',
+      bowerDir + '/react/react.min.js'
+    ],
     loaders: [
-      {
-        //tell webpack to use jsx-loader for all *.jsx files
-        test: /\.jsx$/,
-        loaders: ['react-hot', 'jsx-loader?insertPragma=React.DOM&harmony']
-      },
+      { test: /\.jsx$/, loader:  'jsx-loader?insertPragma=React.DOM&harmony' },
       { test: /\.css$/, loader: 'style!css' },
       { test: /\.scss$/, loader: 'style!css!sass' },
-      { test: /\.jpe?g$|\.gif$|\.png$|\.svg$|\.woff$|\.ttf$/, loader: 'file' }
+      { test: /\.jpeg$|\.gif$|\.png$|\.svg$|\.woff$|\.ttf$/, loader: 'file' }
     ]
   },
   plugins: [
@@ -32,9 +39,5 @@ module.exports = {
     new BowerWebPackPlugin()
   ],
   externals: {
-  },
-  resolve: {
-    extensions: ['', '.js', '.jsx'],
-    modulesDirectories: ['bower_components', 'node_modules', 'web_modules']
   }
 };

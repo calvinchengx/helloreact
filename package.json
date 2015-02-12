@@ -4,7 +4,6 @@
   "description": "Example set-up for reactjs with gulp for public reference",
   "main": "gulpfile.js",
   "dependencies": {
-    "react": "^0.12.2",
     "underscore": "^1.7.0"
   },
   "devDependencies": {
@@ -16,7 +15,6 @@
     "jsx-loader": "^0.12.2",
     "node-fs": "^0.1.7",
     "node-sass": "^1.2.2",
-    "react": "^0.12.2",
     "react-hot-loader": "^1.1.4",
     "sass-loader": "^0.3.0",
     "style-loader": "^0.8.3",
