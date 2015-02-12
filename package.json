@@ -5,6 +5,7 @@
   "main": "gulpfile.js",
   "dependencies": {
     "main-bower-files": "^2.5.0",
+    "react": "^0.12.2",
     "underscore": "^1.7.0"
   },
   "devDependencies": {

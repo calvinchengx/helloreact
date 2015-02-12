@@ -24,38 +24,38 @@ underscore.each(projDirs, function(dir) {
   nodefs.mkdirSync(dir, '0755', true);
 });
 
-var destPath = 'generated';
+//var destPath = 'generated';
 
-gulp.task('bower', function() {
-    'use strict';
-    var jsFilter = gulpFilter('*.js');
-    var cssFilter = gulpFilter('*.css');
-    var fontFilter = gulpFilter(['*.eot', '*.woff', '*.svg', '*.ttf']);
+//gulp.task('bower', function() {
+    //'use strict';
+    //var jsFilter = gulpFilter('*.js');
+    //var cssFilter = gulpFilter('*.css');
+    //var fontFilter = gulpFilter(['*.eot', '*.woff', '*.svg', '*.ttf']);
 
-    return gulp.src(mainBowerFiles())
-    // grab vendor js files from bower_components, minify and push to destPath
-    .pipe(jsFilter)
-    .pipe(gulp.dest(destPath + '/js/vendor'))
-    .pipe(uglify())
-    .pipe(rename({
-        suffix: '.min'
-    }))
-    .pipe(gulp.dest(destPath + '/js/vendor'))
-    .pipe(jsFilter.restore())
-    // grab vendor css files from bower_components, minify and push to destPath
-    .pipe(cssFilter)
-    .pipe(gulp.dest(destPath + '/css'))
-    .pipe(minifycss())
-    .pipe(rename({
-        suffix: '.min'
-    }))
-    .pipe(gulp.dest(destPath + '/css'))
-    .pipe(cssFilter.restore())
-    // grab vendor font files from bower_components and push to destPath
-    .pipe(fontFilter)
-    .pipe(flatten())
-    .pipe(gulp.dest(destPath + '/fonts'));
-});
+    //return gulp.src(mainBowerFiles())
+    //// grab vendor js files from bower_components, minify and push to destPath
+    //.pipe(jsFilter)
+    //.pipe(gulp.dest(destPath + '/js/vendor'))
+    //.pipe(uglify())
+    //.pipe(rename({
+        //suffix: '.min'
+    //}))
+    //.pipe(gulp.dest(destPath + '/js/vendor'))
+    //.pipe(jsFilter.restore())
+    //// grab vendor css files from bower_components, minify and push to destPath
+    //.pipe(cssFilter)
+    //.pipe(gulp.dest(destPath + '/css'))
+    //.pipe(minifycss())
+    //.pipe(rename({
+        //suffix: '.min'
+    //}))
+    //.pipe(gulp.dest(destPath + '/css'))
+    //.pipe(cssFilter.restore())
+    //// grab vendor font files from bower_components and push to destPath
+    //.pipe(fontFilter)
+    //.pipe(flatten())
+    //.pipe(gulp.dest(destPath + '/fonts'));
+//});
     
 gulp.task('html', function() {
   'use strict';
@@ -81,5 +81,5 @@ gulp.task('devserver', function() {
   });
 });
 
-gulp.task('default', ['bower', 'html', 'devserver'], function() {
+gulp.task('default', ['html', 'devserver'], function() {
 });
