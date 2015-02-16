@@ -1,8 +1,7 @@
 {
   "name": "helloreact",
   "version": "1.0.0",
-  "description": "Example set-up for reactjs with gulp for public reference",
-  "main": "gulpfile.js",
+  "description": "Example set-up for reactjs with webpack for public reference",
   "dependencies": {
     "underscore": "^1.7.0"
   },

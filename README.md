@@ -1,4 +1,4 @@
-# Example set-up for reactjs + gulp + webpack + react-hot-reload for public reference
+# Example set-up for reactjs + npm + webpack + react-hot-reload for public reference
 
 Simply git clone and run `start.sh`.
 
