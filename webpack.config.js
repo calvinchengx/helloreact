@@ -2,19 +2,10 @@
 
 var nfs = require('node-fs');
 var underscore = require('underscore');
-var projDirs = ['src/sass', 'src/css', 'src/js', 'src/img', 'generated/css', 'generated/js', 'generated/img', 'dist'];
+var projDirs = ['src/sass', 'src/css', 'src/js', 'src/img', 'dist/css', 'dist/js', 'dist/img'];
 underscore.each(projDirs, function(dir) {
   nfs.mkdirSync(dir, '0755', true);
 });
-
-var fs = require('fs-extra');
-fs.copy('src/index.html', 'generated/index.html', function(err) {
-  if (err) { return console.error(err); }
-  console.log('success!');
-});
-
-// consider using this https://www.npmjs.com/package/html-webpack-plugin
-// can it solve our index.html hot reload problem?
 
 var webpack = require('webpack');
 var bowerDir = __dirname + '/bower_components';
@@ -38,7 +29,7 @@ var config = {
     extensions: ['', '.jsx', '.js', 'min.js']
   },
   output: {
-    path: __dirname + '/generated/js',
+    path: __dirname + '/dist/js',
     filename: 'bundle.js', 
     publicPath: '/js/'
   },
