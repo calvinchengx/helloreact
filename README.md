@@ -19,5 +19,4 @@ Open app at [http://localhost:8080](http://localhost:8080) and enjoy.
 
 ## TODO
 
-* Finish up full page reload feature, to support change detection on `html` files
 * Integrate [flow](http://flowtype.org) into our workflow
