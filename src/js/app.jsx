@@ -1,3 +1,6 @@
+/** @jsx React.DOM */
+'use strict';
+
 var React = require('react');
 var Router = require('react-router');
 
@@ -15,7 +18,7 @@ var App = React.createClass({
           </ul>
         </header>
 
-        {/* this is the important part */}
+        {/* this is the important part that executes the routing */}
         <RouteHandler/>
       </div>
     );

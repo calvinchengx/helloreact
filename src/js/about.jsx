@@ -1,3 +1,6 @@
+/** @jsx React.DOM */
+'use strict';
+
 var React = require('react');
 var Router = require('react-router') ;
 
@@ -8,7 +11,6 @@ var About = React.createClass({
     return (
       <div>
         About
-        <RouteHandler/>
       </div>
     );
   }

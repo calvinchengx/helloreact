@@ -13,8 +13,8 @@ var routes = require('./routes');
 var rootInstance = null;
 
 // React Hot Loader
-Router.run(routes, Router.HistoryLocation, function (Handler, state) {
-    rootInstance = React.render(<Handler />, document.body); // jshint ignore:line
+Router.run(routes, Router.HistoryLocation, function (Handler, state) {  // jshint ignore:line
+    rootInstance = React.render(<Handler />, document.body);            // jshint ignore:line
 });
 
 if (module.hot) {
