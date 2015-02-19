@@ -8,29 +8,19 @@ var DefaultRoute = Router.DefaultRoute;
 var Link = Router.Link;
 var Route = Router.Route;
 var RouteHandler = Router.RouteHandler;
+var Routes = Router.Routes;
 
-var App = React.createClass({
-  render: function () {
-    return (
-      <div>
-        <header>
-          <ul>
-              <li><Link to="app">Home</Link></li>
-          </ul>
-          Logged in as Calvin
-        </header>
-
-        {/* this is the important part */}
-        <RouteHandler/>
-      </div>
-    );
-  }
-});
+var App = require('./app');
+var Home = require('./home');
+var About = require('./about');
 
 var routes = (
-  <Route name="app" path="/">
-    <DefaultRoute handler={App}/>
-  </Route>
+  //<Routes location="history">
+    <Route path="/" name="app" handler={App}>
+      <DefaultRoute name="home" handler={Home}/>
+      <Route name="about" handler={About}/>
+    </Route>
+  //</Routes>
 );
 
 module.exports = routes;

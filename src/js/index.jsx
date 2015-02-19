@@ -12,8 +12,9 @@ var routes = require('./routes');
 
 var rootInstance = null;
 
+// React Hot Loader
 Router.run(routes, function (Handler, state) {
-    rootInstance = React.render(<Handler />, document.getElementById('container')); // jshint ignore:line
+    rootInstance = React.render(<Handler />, document.body); // jshint ignore:line
 });
 
 if (module.hot) {
