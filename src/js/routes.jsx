@@ -15,12 +15,10 @@ var Home = require('./home');
 var About = require('./about');
 
 var routes = (
-  //<Routes location="history">
     <Route path="/" name="app" handler={App}>
       <DefaultRoute name="home" handler={Home}/>
       <Route name="about" handler={About}/>
     </Route>
-  //</Routes>
 );
 
 module.exports = routes;
