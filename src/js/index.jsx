@@ -8,12 +8,12 @@ require('../sass/styles.scss');
 
 var React = require('react');
 var Router = require('react-router');
-var routes = require('./routes');
+var Routes = require('./components/Routes');
 
 var rootInstance = null;
 
 // React Hot Loader
-Router.run(routes, Router.HistoryLocation, function (Handler, state) {  // jshint ignore:line
+Router.run(Routes, Router.HistoryLocation, function (Handler, state) {  // jshint ignore:line
     rootInstance = React.render(<Handler />, document.body);            // jshint ignore:line
 });
 

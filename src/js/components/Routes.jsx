@@ -8,17 +8,16 @@ var DefaultRoute = Router.DefaultRoute;
 var Link = Router.Link;
 var Route = Router.Route;
 var RouteHandler = Router.RouteHandler;
-var Routes = Router.Routes;
 
-var App = require('./app');
-var Home = require('./home');
-var About = require('./about');
+var App = require('./App');
+var Home = require('./Home');
+var About = require('./About');
 
-var routes = (
-    <Route path="/" name="app" handler={App}>       
+var Routes = (
+    <Route path="/" name="App" handler={App}>       
       <DefaultRoute name="home" handler={Home}/>    
       <Route name="about" handler={About}/>         
     </Route>                                        
 );
 
-module.exports = routes;
+module.exports = Routes;

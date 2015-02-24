@@ -1,4 +1,3 @@
-/** @jsx React.DOM */
 'use strict';
 
 var React = require('react');
@@ -10,7 +9,7 @@ var Link = Router.Link;
 var App = React.createClass({
   render: function () {
     return (
-      <div>
+      <div id="wrap">
         <header>
           <ul>
               <li><Link to="home">Home</Link></li>
@@ -25,4 +24,4 @@ var App = React.createClass({
   }
 });
 
-module.exports = App
+module.exports = App 

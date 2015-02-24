@@ -1,5 +1,23 @@
-@import "_partials/basic2col";
+/*@import "_partials/basic2col";*/
+@import "../../bower_components/normalize-scss/normalize";
+@import "../../bower_components/susy/sass/susy";
+
+// color palette from www.colourlovers.com/palette/3636384/Winter_Wolves
+$color-morningmist: #F4F9F2;
+$color-finesugar: #E5DDB6;
+$color-sweaterwithwolves: #635B51;
+$color-guatemalaskies: #CEDBD1;
+$color-giver: #D3E8D9;
+
+*, html {
+  height: 100%;
+}
 
 body {
-    background-color: #9f9f9f;
+  background-color: #9f9f9f;
+  height: 100%;
+}
+
+header {
+  background-color: $color-giver;
 }
