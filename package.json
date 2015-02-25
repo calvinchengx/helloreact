@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Example set-up for reactjs with webpack for public reference",
   "dependencies": {
+    "marked": "^0.3.3",
     "underscore": "^1.7.0"
   },
   "devDependencies": {

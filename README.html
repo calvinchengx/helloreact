@@ -1,0 +1,19 @@
+<h1 id="example-set-up-for-reactjs-npm-webpack-react-hot-reload-for-public-reference">Example set-up for reactjs + npm + webpack + react-hot-reload for public reference</h1>
+<p>Simply git clone and run <code>start.sh</code>.</p>
+<p>It would make sense to do this in an isolated node environment so the automatically installed dependencies invoked by</p>
+<ul>
+<li><code>start.sh</code>  (global dependencies)</li>
+<li><code>npm install</code> in <code>start.sh</code></li>
+<li><code>bower install</code> in <code>start.sh</code></li>
+</ul>
+<p>will be cleanly installed.</p>
+<p>Open app at <a href="http://localhost:8080">http://localhost:8080</a> and enjoy.</p>
+<h2 id="notes">Notes</h2>
+<ul>
+<li>Source code is located in the <code>/src</code> directory.</li>
+<li>The webpack-dev-server (invoked via <code>gulp</code>) sends modified source code to <code>/dist</code> directory and <code>/dist</code> is the base directory from which we run our dev server.</li>
+</ul>
+<h2 id="todo">TODO</h2>
+<ul>
+<li>Integrate <a href="http://flowtype.org">flow</a> into our workflow</li>
+</ul>

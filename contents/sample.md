@@ -17,10 +17,6 @@ Open app at [http://localhost:8080](http://localhost:8080) and enjoy.
 * Source code is located in the `/src` directory.
 * The webpack-dev-server (invoked via `gulp`) sends modified source code to `/dist` directory and `/dist` is the base directory from which we run our dev server.
 
-## IN PROGRESS
-
-* Implement static site generation feature - markdown content in `./contents` can be built into html content and placed in `./build` via `node markdownToHtml` command.
-
 ## TODO
 
 * Integrate [flow](http://flowtype.org) into our workflow
