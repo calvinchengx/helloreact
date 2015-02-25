@@ -18,7 +18,7 @@ var App = React.createClass({
         </header>
 
         {/* this is the important part that executes the routing */}
-        <RouteHandler/>
+        <RouteHandler />
       </div>
     );
   }

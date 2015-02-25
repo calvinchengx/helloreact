@@ -14,7 +14,8 @@ var rootInstance = null;
 
 // React Hot Loader
 Router.run(Routes, Router.HistoryLocation, function (Handler, state) {  // jshint ignore:line
-    rootInstance = React.render(<Handler />, document.body);            // jshint ignore:line
+  var params = state.params;
+  rootInstance = React.render(<Handler params={params}/>, document.body);            // jshint ignore:line
 });
 
 if (module.hot) {
