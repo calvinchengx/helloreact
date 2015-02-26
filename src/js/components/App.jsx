@@ -11,10 +11,12 @@ var App = React.createClass({
     return (
       <div id="wrap">
         <header>
-          <ul>
-              <li><Link to="home">Home</Link></li>
-              <li><Link to="about">About</Link></li>
-          </ul>
+          <div>
+            <ul className="nav">
+                <li><Link to="home">Home</Link></li>
+                <li><Link to="about">About</Link></li>
+            </ul>
+          </div>
         </header>
 
         {/* this is the important part that executes the routing */}

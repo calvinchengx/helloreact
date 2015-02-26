@@ -24,10 +24,21 @@ html, body, #wrap {
 }
 
 body {
-  background-color: #9f9f9f;
+  background-color: $color-morningmist; 
 }
 
 header {
-  background-color: $color-giver;
+  background-color: $color-guatemalaskies;
   height: 80vh;
+}
+
+header div {
+  @include container;
+  min-width: 1200px;
+  margin: 0 10%;   
+}
+
+.nav {
+  list-style-type: none;
+  text-align: right;
 }
