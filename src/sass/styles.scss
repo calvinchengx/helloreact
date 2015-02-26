@@ -9,15 +9,25 @@ $color-sweaterwithwolves: #635B51;
 $color-guatemalaskies: #CEDBD1;
 $color-giver: #D3E8D9;
 
-*, html {
-  height: 100%;
+// basic full height reset
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100vh;
+}
+
+html, body, #wrap {
+  min-height: 100vh;
 }
 
 body {
   background-color: #9f9f9f;
-  height: 100%;
 }
 
 header {
   background-color: $color-giver;
+  height: 80vh;
 }
