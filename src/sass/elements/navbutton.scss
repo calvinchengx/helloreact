@@ -1,0 +1,47 @@
+.navButton{
+    float: right;
+    font-size: 14px; /*Controls size of element*/
+    width:1.5em;
+    height: 1.5em;
+    position: relative;
+}
+
+.navButton a{
+    position:absolute;
+    width:100%;
+    height:0.2em;
+    top:50%;
+    margin-top: -0.1em;
+    -webkit-border-radius: 24px;
+    border-radius: 24px;
+    background-color: #333;
+    -webkit-box-shadow:inset 1px 1px 1px 1px rgba(0,0,0,0.5);
+    box-shadow:inset 1px 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+.navButton a:before, .navButton a:after{
+    position:absolute;
+    content:'';
+    width:100%;
+    height:0.2em;
+    -webkit-border-radius: 24px;
+    border-radius: 24px;
+    background-color: #333;
+    -webkit-box-shadow:inset 1px 1px 1px 1px rgba(0,0,0,0.5);
+    box-shadow:inset 1px 1px 1px 1px rgba(0,0,0,0.5);
+
+}
+
+.navButton a:before{
+    top:0.5em;
+}
+
+.navButton a:after{
+    bottom:0.5em;
+}
+
+.navButton:hover a:before, .navButton:hover a:after, .navButton:hover a,.navButton:active a:before, .navButton:active a:after, .navButton:active a{
+    background-color: #fff;
+    -webkit-box-shadow: 0 0 5px 2px #9ecaed;
+    box-shadow: 0 0 5px 2px #9ecaed;
+}

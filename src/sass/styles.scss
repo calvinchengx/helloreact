@@ -1,6 +1,7 @@
 /*@import "_partials/basic2col";*/
 @import "../../bower_components/normalize-scss/normalize";
 @import "../../bower_components/susy/sass/susy";
+@import "elements/navbutton";
 
 // color palette from www.colourlovers.com/palette/3636384/Winter_Wolves
 $color-morningmist: #F4F9F2;
@@ -10,7 +11,7 @@ $color-guatemalaskies: #CEDBD1;
 $color-giver: #D3E8D9;
 
 $susy: (
-    columns: 4,
+    columns: 4,  // mobile first
     gutters: .25,
     global-box-sizing: border-box,
     debug: (
@@ -19,6 +20,20 @@ $susy: (
         output: background,
         toggle: top right
     )
+);
+
+// tablet
+$tablet-media: 800px;
+$tablet-layout: (
+  min-width: 800px,
+  columns: 8
+);
+
+// desktop
+$desktop-media: 1200px;
+$desktop-layout: (
+  min-width: 1200px, 
+  columns: 12 
 );
 
 // basic full height reset
@@ -47,27 +62,52 @@ header {
 
 #header-wrap {
   @include container;
+  min-width: 480px;
   margin: 0 10%;
   padding-top: 2%;
-}
 
-.logo {
-  @include span(1 of 5);
-}
+  .logo {
+    @include span(1 of 5);
 
-.nav {
-  @include span(2 of 5 last);
-  list-style-type: none;
+    a {
+      text-decoration: none;
+    }
+  }
+  .navButton { display: block; } 
+  .nav {
+    @include span(2 of 5 last);
+    display: none;
+    list-style-type: none;
 
-  li {
-    display: inline-block;
-    margin-left: 100px;
+    li {
+      display: inline-block;
+      margin-left: 100px;
+    }
+
+    a {
+      text-decoration: none;
+      text-align: right;
+    }
   }
 
-  a {
-    text-decoration: none;
-    text-align: right;
+  // tablet
+  @include susy-breakpoint($tablet-media, $tablet-layout) {
+    @include container;
+    min-width: 800px;
+    margin: 0 10%;   
+    .navButton { display: block; }
+    .nav { display: none; }
   }
+
+  // desktop
+  @include susy-breakpoint($desktop-media, $desktop-layout) {
+    @include container;
+    min-width: 1200px;
+    margin: 0 10%;   
+    .navButton { display: none; }
+    .nav { display: block; }
+  }
+
 }
 
 .content {

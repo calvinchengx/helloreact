@@ -13,11 +13,11 @@ var App = React.createClass({
         <header>
           <div id="header-wrap">
             <div className="logo">
-              HelloReact
+              <Link to="home">HelloReact</Link>
             </div>
+            <div className="navButton"><a></a></div> 
             <div className="nav">
               <ul>
-                <li><Link to="home">Home</Link></li>
                 <li><Link to="about">About</Link></li>
               </ul>
             </div>
