@@ -33,7 +33,6 @@ header {
 }
 
 header div {
-  @include container;
   min-width: 1200px;
   margin: 0 10%;   
 }
@@ -41,4 +40,9 @@ header div {
 .nav {
   list-style-type: none;
   text-align: right;
+}
+
+.nav a {
+  display: block;
+  float: left;
 }
