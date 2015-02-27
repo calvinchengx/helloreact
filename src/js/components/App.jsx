@@ -11,11 +11,16 @@ var App = React.createClass({
     return (
       <div id="wrap">
         <header>
-          <div>
-            <ul className="nav">
+          <div id="header-wrap">
+            <div className="logo">
+              HelloReact
+            </div>
+            <div className="nav">
+              <ul>
                 <li><Link to="home">Home</Link></li>
                 <li><Link to="about">About</Link></li>
-            </ul>
+              </ul>
+            </div>
           </div>
         </header>
 

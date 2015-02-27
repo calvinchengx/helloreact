@@ -9,6 +9,18 @@ $color-sweaterwithwolves: #635B51;
 $color-guatemalaskies: #CEDBD1;
 $color-giver: #D3E8D9;
 
+$susy: (
+    columns: 4,
+    gutters: .25,
+    global-box-sizing: border-box,
+    debug: (
+        image: show,
+        color: rgba(#66b3dc, 0.25),
+        output: background,
+        toggle: top right
+    )
+);
+
 // basic full height reset
 * {
   margin: 0;
@@ -21,6 +33,7 @@ html {
 
 html, body, #wrap {
   min-height: 100vh;
+  width: 100%;
 }
 
 body {
@@ -32,17 +45,25 @@ header {
   height: 80vh;
 }
 
-header div {
-  min-width: 1200px;
-  margin: 0 10%;   
+#header-wrap {
+  @include container;
+  margin: 0 10%;
+}
+
+/*.logo, .nav {*/
+  /*display: block;*/
+/*}*/
+
+.logo {
+  @include span(1 of 4);
 }
 
 .nav {
+  @include span(3 of 4 last);
   list-style-type: none;
-  text-align: right;
 }
 
-.nav a {
+.nav li {
   display: block;
-  float: left;
+  float: right;
 }
