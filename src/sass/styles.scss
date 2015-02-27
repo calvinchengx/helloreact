@@ -50,10 +50,6 @@ header {
   margin: 0 10%;
 }
 
-/*.logo, .nav {*/
-  /*display: block;*/
-/*}*/
-
 .logo {
   @include span(1 of 4);
 }
