@@ -114,4 +114,19 @@ header {
   @include container;
   margin: 0 10%;
   padding-top: 2%;
+
+  // tablet
+  @include susy-breakpoint($tablet-media, $tablet-layout) {
+    @include container;
+    min-width: 800px;
+    margin: 0 10%;   
+  }
+
+  // desktop
+  @include susy-breakpoint($desktop-media, $desktop-layout) {
+    @include container;
+    min-width: 1200px;
+    margin: 0 10%;   
+  }
+
 }
