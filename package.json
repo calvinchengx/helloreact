@@ -22,6 +22,7 @@
   },
   "scripts": {
     "dev": "webpack-dev-server --content-base dist --hot true --progress --colors --history-api-fallback",
+    "build": "cp -f src/index.html generated/index.html && webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Calvin Cheng",
