@@ -15,7 +15,8 @@ Open app at [http://localhost:8080](http://localhost:8080) and enjoy.
 ## Notes
 
 * Source code is located in the `/src` directory.
-* The webpack-dev-server (invoked via `gulp`) sends modified source code to `/dist` directory and `/dist` is the base directory from which we run our dev server.
+* Run the development server via `npm run dev`
+* We build into `dist/` directory via `npm run build`
 
 ## IN PROGRESS
 
