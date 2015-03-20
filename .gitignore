@@ -1,6 +1,5 @@
 build/*
 dist/*
-!dist/index.html
 bower_components/*
 node_modules/*
 !build/_blank.html
