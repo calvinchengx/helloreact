@@ -15,7 +15,8 @@ Open app at [http://localhost:8080](http://localhost:8080) and enjoy.
 ## Notes
 
 * Source code is located in the `/src` directory.
-* Run the development server via `npm run dev`
+* Run only the webpack-dev-server with `npm run dev-static`
+* Run webpack-dev-server with nodejs backend via `npm run dev`
 * We build into `dist/` directory via `npm run build`
 
 ## IN PROGRESS
