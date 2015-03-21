@@ -23,7 +23,7 @@
     "webpack-dev-server": "^1.7.0"
   },
   "scripts": {
-    "start-backend": "node src/server.js",
+    "start-backend": "cd src/server && node server.js",
     "dev-static": "cp -f src/index.html dist/index.html && cp -f src/favicon.ico dist/favicon.ico && webpack-dev-server --content-base dist --hot true --progress --colors --history-api-fallback",
     "dev": "npm run start-backend & cp -f src/index.html dist/index.html & cp -f src/favicon.ico dist/favicon.ico & webpack-dev-server --host  0.0.0.0 --content-base-target 'http://127.0.0.1:5000' --hot true --progress --colors",
     "build": "cp -f src/index.html dist/index.html && cp -f src/favicon.ico dist/favicon.ico  && webpack -p --config webpack.prod.config.js",

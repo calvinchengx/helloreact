@@ -1,4 +1,4 @@
-# Example set-up for reactjs + npm + webpack + react-hot-reload for public reference
+# Example set-up for reactjs + npm + webpack + react-hot-reload 
 
 Simply git clone and run `start.sh`.
 

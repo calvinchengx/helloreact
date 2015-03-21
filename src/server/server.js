@@ -1,10 +1,12 @@
 'use strict';
 
+var path = require('path');
 var express = require('express');
 var app = express();
 
 app.get('*', function(req, res) {
-  res.sendFile(__dirname + '/index.html');
+  var pathToIndex = path.resolve(__dirname, '..', 'index.html');
+  res.sendFile(pathToIndex);
 });
 
 var server = app.listen(5000, function() {
