@@ -1,4 +1,4 @@
-# Example set-up for reactjs + npm + webpack + react-hot-reload 
+# reactjs + npm + webpack + react-hot-reload + isomorphic backend with nodejs express
 
 Simply git clone and run `start.sh`.
 
