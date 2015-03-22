@@ -42,5 +42,6 @@ Open app at [http://localhost:8080](http://localhost:8080) and enjoy.
 * Handle routes that are not yet defined with react router
 * Implement static site generation feature - markdown content in `./contents` can be built into html content and placed in `./build` via `node markdownToHtml` command.
 * Implement Flux design pattern
+* Handling web tokens
 * Implement CORS so we can make cross origin API calls to API backends
 * Integrate [flow](http://flowtype.org) into our workflow
