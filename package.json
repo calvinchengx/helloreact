@@ -4,7 +4,11 @@
   "description": "Example set-up for reactjs with webpack for public reference",
   "dependencies": {
     "express": "^4.12.3",
+    "handlebars": "^3.0.0",
     "marked": "^0.3.3",
+    "node-jsx": "^0.12.4",
+    "react": "^0.13.1",
+    "react-router": "^0.13.1",
     "underscore": "^1.7.0"
   },
   "devDependencies": {
@@ -24,9 +28,9 @@
   },
   "scripts": {
     "start-backend": "cd src && node server",
-    "dev-static": "cp -f src/index.html dist/index.html && cp -f src/favicon.ico dist/favicon.ico && webpack-dev-server --content-base dist --hot true --progress --colors --history-api-fallback",
-    "dev": "npm run start-backend & cp -f src/index.html dist/index.html & cp -f src/favicon.ico dist/favicon.ico & webpack-dev-server --host 0.0.0.0 --content-base-target 'http://127.0.0.1:5000' --hot true --progress --colors",
-    "build": "cp -f src/index.html dist/index.html && cp -f src/favicon.ico dist/favicon.ico  && webpack -p --config webpack.prod.config.js",
+    "dev-static": "webpack-dev-server --content-base dist --hot true --progress --colors --history-api-fallback",
+    "dev": "npm run start-backend & webpack-dev-server --host 0.0.0.0 --content-base-target 'http://127.0.0.1:5000' --hot true --progress --colors",
+    "build": "webpack -p --config webpack.prod.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Calvin Cheng",

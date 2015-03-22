@@ -28,7 +28,7 @@ var config = {
   },
   entry: {
     app: [
-      './src/js/index.jsx'
+      './src/js/entry.jsx'
     ],
     vendors: ['react']
   },
