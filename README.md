@@ -1,10 +1,10 @@
 # Isomorphic ReactJS
 
-A ReactJS web SPA (Single-Page App) frontend that is SEO-friendly using Server-Side Rendered (SSR) template for the first-time and thereafter, does not need to call the server again.  Doing this also ensures that visitors entering the site from other urls other than the home '/' path will also be served appropriately.  No more broken urls which is typical of frontend-only static sites.  At the same time, we benefit from not having to make unnecessary calls to the server!  
+A ReactJS SPA (Single-Page App) web frontend that is SEO-friendly using Server-Side Rendered (SSR) template for the first-time and thereafter, does not need to call the server again.  Doing this also ensures that visitors entering the site from other urls other than the home '/' path will be served correctly.  This avoids the no broken url problem which is typical of frontend-only static sites. And at the same time, we keep all the benefits of SPAs - no unnecessary calls to server-side template rendering. 
 
 Call once and we are done.
 
-This isomorphic layout should be used in conjunction with a separate API backend (not included here) that will serve data to the frontend.
+This isomorphic layout should be used in conjunction with a distinct and separate API backend (not included here) that will serve data to the frontend.
 
 Currently, this app is composed with
 
@@ -39,7 +39,6 @@ Open app at [http://localhost:8080](http://localhost:8080) and enjoy.
 ## TODO 
 
 * generate css which is used by SSR template so as to avoid FOUC
-* Handle routes that are not yet defined with react router
 * Implement static site generation feature - markdown content in `./contents` can be built into html content and placed in `./build` via `node markdownToHtml` command.
 * Implement Flux design pattern
 * Handling web tokens
