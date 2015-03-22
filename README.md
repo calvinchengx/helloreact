@@ -1,6 +1,8 @@
 # Isomorphic ReactJS
 
-A ReactJS web frontend that is SEO-friendly using Server-Side Rendered (SSR) template for the first-time and thereafter, does not need to call the server again.  Doing this also ensures that visitors entering the site from other urls other than the home '/' path will also be served appropriately.  No more broken urls which is typical of frontend-only static sites.  At the same time, we benefit from not having to make unnecessary calls to the server!  Call once and we are done.
+A ReactJS web SPA (Single-Page App) frontend that is SEO-friendly using Server-Side Rendered (SSR) template for the first-time and thereafter, does not need to call the server again.  Doing this also ensures that visitors entering the site from other urls other than the home '/' path will also be served appropriately.  No more broken urls which is typical of frontend-only static sites.  At the same time, we benefit from not having to make unnecessary calls to the server!  
+
+Call once and we are done.
 
 This isomorphic layout should be used in conjunction with a separate API backend (not included here) that will serve data to the frontend.
 
@@ -11,6 +13,7 @@ Currently, this app is composed with
 * ReactJS
 * React Hot Reload (Hot Module Reload, HMR)
 * Isomorphic Server-Side Rendered templates with NodeJS and Express
+* Susy sass framework
 
 ## Set-up
 
