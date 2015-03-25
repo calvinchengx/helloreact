@@ -31,7 +31,7 @@
     "start": "npm run start-backend & npm run dev",
     "start-backend": "cd src && node server",
     "dev-static": "webpack-dev-server --content-base dist --hot true --progress --colors --history-api-fallback",
-    "dev": "webpack-dev-server --host 0.0.0.0 --content-base-target 'http://127.0.0.1:5000' --hot true --progress --colors",
+    "dev": "webpack-dev-server --host 0.0.0.0 --content-base-target 'http://127.0.0.1:5000' --progress --colors",
     "build": "webpack -p --config webpack.prod.config.js",
     "sassc": "node-sass --output-style compressed src/sass/styles.scss dist/css/styles.css",
     "test": "echo \"Error: no test specified\" && exit 1"

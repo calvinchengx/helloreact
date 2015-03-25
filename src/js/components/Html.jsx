@@ -8,9 +8,10 @@ var Html = React.createClass({
     return (
       <html>
         <head>
-          <title>{ this.props.title }</title>
+          <title>HelloReact</title>
         </head>
-        <body dangerouslySetInnerHTML={{__html: this.props.markup}}>
+        <body>
+          <div id="wrap" dangerouslySetInnerHTML={{__html: this.props.markup}}></div>
         </body>
         <script src="/js/vendors.js"></script>
         <script src="/js/bundle.js"></script>
